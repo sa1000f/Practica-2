@@ -1,0 +1,88 @@
+﻿@page
+@model Practica_2.Pages.NominaModel
+@{
+    Empleado empleado1 = new Empleado();
+    Empleado empleado2 = new Empleado();
+    Empleado empleado3 = new Empleado();
+    Empleado empleado4 = new Empleado();
+    Empleado empleado5 = new Empleado();
+
+
+    empleado1.Nombre = "Sam";
+    empleado1.Apellido = "Reynoso";
+    empleado1.Cargo = "Encargado";
+    empleado1.Salario = 50000.00;
+
+    empleado2.Nombre = "Ramon";
+    empleado2.Apellido = "Florencio";
+    empleado2.Cargo = "Gerente";
+    empleado2.Salario = 120000.00;
+
+    empleado3.Nombre = "Mario";
+    empleado3.Apellido = "Cimarro";
+    empleado3.Cargo = "2do VP Tecnologia";
+    empleado3.Salario = 200000.00;
+
+    empleado4.Nombre = "Kevin";
+    empleado4.Apellido = "Ramirez";
+    empleado4.Cargo = "Gestor Servicios";
+    empleado4.Salario = 30000.00;
+
+    empleado5.Nombre = "Jose";
+    empleado5.Apellido = "Perez";
+    empleado5.Cargo = "Servicio Al Cliente";
+    empleado5.Salario = 20000.00;
+}
+
+<div class="text-black-50 ">
+    <h1>Calculo Nomina</h1>
+    <ul>
+        <li>Nombre: @empleado1.Nombre</li>
+        <li>Apellido: @empleado1.Apellido</li>
+        <li>Cargo: @empleado1.Cargo</li>
+        <li>Salario: @empleado1.Salario</li>
+        <li>Seguro Familiar Salud: @empleado1.Calculo_SFS(empleado1.Salario)</li>
+        <li>Administradora de Fondo de Pensiones: @empleado1.Calculo_AFP(empleado1.Salario)</li>
+        <li>Impuesto Sobre la Renta: @empleado1.Calculo_ISR(empleado1.Salario)</li>
+    </ul>
+
+    <ul>
+        <li>Nombre: @empleado2.Nombre</li>
+        <li>Apellido: @empleado2.Apellido</li>
+        <li>Cargo: @empleado2.Cargo</li>
+        <li>Salario: @empleado2.Salario</li>
+        <li>Seguro Familiar Salud: @empleado2.Calculo_SFS(empleado2.Salario)</li>
+        <li>Administradora de Fondo de Pensiones: @empleado2.Calculo_AFP(empleado2.Salario)</li>
+        <li>Impuesto Sobre la Renta: @empleado2.Calculo_ISR(empleado2.Salario)</li>
+    </ul>
+
+    <ul>
+        <li>Nombre: @empleado3.Nombre</li>
+        <li>Apellido: @empleado3.Apellido</li>
+        <li>Cargo: @empleado3.Cargo</li>
+        <li>Salario: @empleado3.Salario</li>
+        <li>Seguro Familiar Salud: @empleado3.Calculo_SFS(empleado3.Salario)</li>
+        <li>Administradora de Fondo de Pensiones: @empleado3.Calculo_AFP(empleado3.Salario)</li>
+        <li>Impuesto Sobre la Renta: @empleado3.Calculo_ISR(empleado3.Salario)</li>
+    </ul>
+
+    <ul>
+        <li>Nombre: @empleado4.Nombre</li>
+        <li>Apellido: @empleado4.Apellido</li>
+        <li>Cargo: @empleado4.Cargo</li>
+        <li>Salario: @empleado4.Salario</li>
+        <li>Seguro Familiar Salud: @empleado4.Calculo_SFS(empleado4.Salario)</li>
+        <li>Administradora de Fondo de Pensiones: @empleado4.Calculo_AFP(empleado4.Salario)</li>
+        <li>Impuesto Sobre la Renta: @empleado4.Calculo_ISR(empleado4.Salario)</li>
+    </ul>
+
+    <ul>
+        <li>Nombre: @empleado5.Nombre</li>
+        <li>Apellido: @empleado5.Apellido</li>
+        <li>Cargo: @empleado5.Cargo</li>
+        <li>Salario: @empleado5.Salario</li>
+        <li>Seguro Familiar Salud: @empleado5.Calculo_SFS(empleado5.Salario)</li>
+        <li>Administradora de Fondo de Pensiones: @empleado5.Calculo_AFP(empleado5.Salario)</li>
+        <li>Impuesto Sobre la Renta: @empleado5.Calculo_ISR(empleado5.Salario)</li>
+    </ul>
+</div>
