@@ -38,15 +38,15 @@ namespace Practica_2.Pages
         {
             if (Salario * 12 > 416220.01 && Salario * 12 <= 624329.00)
             {
-                return ((Salario * 12) - 416220.00) * 0.15;
+                return Math.Round((((Salario * 12) - 416220.00) * 0.15) / 12);
             }
             else if (Salario * 12 > 624329.01 && Salario * 12 <= 867123.00)
             {
-                return ((Salario * 12) - 624329.01) * 0.20 + 31216.00;
+                return Math.Round(((((Salario * 12) - 624329.01) * 0.20) + 31216.00) / 12);
             }
             else if (Salario * 12 > 867123.01)
             {
-                return ((Salario * 12) - 867123.01) * 0.25 + 79776.00;
+                return Math.Round(((((Salario * 12) - 867123.01) * 0.25) + 79776.00) / 12);
             }
             else return 0.00;
 
